@@ -1,0 +1,15 @@
+
+.btn-primary {
+    background-color: rgba(0, 132, 180, 1);
+    font-weight: bold;
+    color: white;
+    border:none;
+    padding: 7px 28px;
+    border-radius: 100px;
+    font-size: 14px;
+}
+.btn-secondary {
+    color: rgba(0, 132, 180, 1);
+    background-color: white;
+
+}
