@@ -20,6 +20,10 @@
     justify-content: space-between;
 }
 
-img {
+.logo-img {
     margin-right: 10px;
+}
+.button-wrapper {
+    display: flex;
+   align-items: center;
 }
