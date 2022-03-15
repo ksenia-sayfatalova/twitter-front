@@ -1,15 +1,17 @@
-import React, {Fragment} from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import {Route , Routes} from 'react-router-dom';
 import 'normalize.css';
 import './App.css';
-import Header from "./Layout/Header/Header";
-import {Cover} from "./Layout/Cover/Cover.js";
+import {ProfilePage} from "./pages/Profile/ProfilePage";
+import {SignInPage} from "./pages/SignIn/SignInPage";
 
 function App() {
-  return <Fragment>
-    <Header/>
-      <Cover/>
-  </Fragment>
+    return <Routes>
+        <Route path='/profile' element={<ProfilePage/>}>  </Route>
+            <Route path='/signin' element={<SignInPage/>}>
+        </Route>
+    </Routes>
+
 }
 
 export default App;

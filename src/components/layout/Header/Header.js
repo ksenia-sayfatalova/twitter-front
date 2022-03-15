@@ -1,5 +1,5 @@
-import logo from '../../Assets/Logo.svg';
-import {Button} from '../../Components/Button';
+import logo from '../../../assets/Logo.svg';
+import {Button} from '../../Button/Button';
 import classes from './Header.module.css';
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
                         <img className={classes['logo-img']} src={logo}/>
                         <p>Guccitter</p>
                     </div>
-                    <div className={classes['button-wrapper']}>
+                    <div className={classes['Button-wrapper']}>
                         <Button secondaryBtn>Login</Button>
                         <Button>Sign up</Button>
                     </div>

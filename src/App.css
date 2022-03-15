@@ -1,5 +1,6 @@
 * {
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 .section-wrapper {
   max-width: 1270px;
@@ -9,3 +10,11 @@
 body {
   overflow-x: hidden;
 }
+.tweet-menu-wrapper {
+  max-width: 620px;
+  width: 100%;
+  display: flex;
+  background-color: white;
+
+}
+

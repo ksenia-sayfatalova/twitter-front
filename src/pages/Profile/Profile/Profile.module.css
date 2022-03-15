@@ -1,0 +1,18 @@
+.general-wrapper {
+    background-color: rgba(230,236,240);
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-profile-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.div-width {
+    width: 30%;
+}
+.section-wrapper-hue {
+    padding-top: 20px;
+}

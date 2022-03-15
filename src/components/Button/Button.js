@@ -2,6 +2,8 @@ import classes from './button.module.css';
 import classNames from 'classnames';
 
 export const Button = (props) => {
-    const btnClasses = classNames(classes['btn-primary'], { [classes['btn-secondary']]: props.secondaryBtn === true });
+    const btnClasses = classNames(classes['btn-primary'],
+        {[classes['btn-secondary']]: props.secondaryBtn === true},
+        {[classes['w-100']]: props.w100 === true});
     return <button className={btnClasses}>{props.children}</button>
 };
