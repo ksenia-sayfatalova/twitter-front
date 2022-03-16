@@ -1,6 +1,6 @@
 import {Fragment} from "react";
-import date from '../../../assets/Vector.png';
-import location from '../../../assets/Vector (1).png';
+import date from '../../../assets/date.svg';
+import location from '../../../assets/location.svg';
 import classes from './UserInfo.module.css'
 
 export const UserInfo = () => {

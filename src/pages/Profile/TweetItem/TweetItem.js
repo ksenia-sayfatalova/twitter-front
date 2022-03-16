@@ -1,14 +1,14 @@
-import like from '../../../assets/Vector (2).png';
+import like from '../../../assets/like-svgrepo-com.svg';
 import classes from './TweetItem.module.css';
-import foto from '../../../assets/Ellipse 1.png';
+import photo from '../../../assets/Ellipse 1.png';
 
 export const TweetItem = (props) => {
     const date = props.date.getFullYear() + '-' + (props.date.getMonth() + 1) + '-' + props.date.getDate();
     return (
-        <li>
+        <li key={props.key}>
             <div className={classes['tweet-item']}>
                 <div className={classes['tweet-foto']}>
-                    <img src={foto} className={classes.foto}/>
+                    <img src={photo} className={classes.foto}/>
                 </div>
                 <div className={classes['tweet-item-info']}>
                     <div className={classes['tweet-info']}>
@@ -17,7 +17,7 @@ export const TweetItem = (props) => {
                         <span>{date}</span>
                     </div>
                     <div className={classes['tweet-text']}>
-                        <span>{props.tweet}</span>
+                        <span>{props.text}</span>
                     </div>
                     <div className={classes['like-info']}>
                         <img src={like} className={classes['like-image']}/>

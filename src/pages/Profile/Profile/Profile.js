@@ -4,7 +4,7 @@ import {Banner} from '../Banner/Banner';
 import {TweetsList} from "../TweetsList/TweetsList";
 import classNames from "classnames";
 
-export const Profile = () => {
+export const Profile = (props) => {
     return (
         <div className={classes['general-wrapper']}>
             <div className={classNames('section-wrapper', classes['section-wrapper-hue'])}>
@@ -12,7 +12,7 @@ export const Profile = () => {
                     <div className={classes['div-width']}>
                         <UserInfo/>
                     </div>
-                    <TweetsList/>
+                    <TweetsList items={props.items}/>
                     <div className={classes['div-width']}>
                         <Banner/>
                     </div>

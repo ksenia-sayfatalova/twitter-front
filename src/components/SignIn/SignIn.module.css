@@ -54,10 +54,6 @@ input::placeholder {
     padding-left: 10px;
 }
 
-.sign-in-button {
-    width: 100%;
-}
-
 input:focus {
     outline: none;
     border-color: rgb(88, 207, 250);

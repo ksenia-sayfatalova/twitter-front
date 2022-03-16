@@ -3,10 +3,10 @@ import Header from "../../components/layout/Header/Header";
 import {Cover} from "./Cover/Cover";
 import {Profile} from "./Profile/Profile";
 
-export const ProfilePage = () => {
+export const ProfilePage = (props) => {
     return <Fragment>
         <Header/>
         <Cover/>
-        <Profile/>
+        <Profile items={props.items}/>
     </Fragment>
 }
