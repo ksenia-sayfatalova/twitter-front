@@ -47,10 +47,10 @@
     width: 48px;
 }
 
-.details-all-like-image {
-    height: 15px;
-    width: 15px;
-}
+/*.details-all-like-image {*/
+/*    height: 15px;*/
+/*    width: 15px;*/
+/*}*/
 
 .details-text{
     margin-bottom: 25px;
@@ -81,17 +81,6 @@
     color: rgba(101, 119, 134, 1);
 }
 
-.details-all-like-text {
-    margin-left: 5px;
-}
-
-.details-all-like {
-    font-size: 14px;
-    display: flex;
-    flex-direction: row;
-    margin: 10px 0;
-}
-
 .details-like::after, .details-like::before {
     height: 2px;
     background-color: rgba(230, 236, 240, 1);
@@ -107,3 +96,4 @@
     top: 0;
     bottom: unset;
 }
+

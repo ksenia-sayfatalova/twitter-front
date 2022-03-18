@@ -1,9 +1,10 @@
 import like from '../../../assets/like-svgrepo-com.svg';
 import classes from './TweetItem.module.css';
 import photo from '../../../assets/Ellipse 1.png';
+import {dateFormat} from "../../../utils/dateFormat";
+import {LikeImage} from "../../../components/LikeImage/LikeImage";
 
 export const TweetItem = (props) => {
-    const date = props.date.getFullYear() + '-' + (props.date.getMonth() + 1) + '-' + props.date.getDate();
     return (
         <li key={props.key}>
             <div className={classes['tweet-item']}>
@@ -12,17 +13,14 @@ export const TweetItem = (props) => {
                 </div>
                 <div className={classes['tweet-item-info']}>
                     <div className={classes['tweet-info']}>
-                        <h3>{props.name}</h3>
-                        <span className={classes['tweet-info-user']}>{props.user}</span>
-                        <span>{date}</span>
+                        <h3>{props.item.name}</h3>
+                        <span className={classes['tweet-info-user']}>{props.item.user}</span>
+                        <span>{dateFormat(props.item.date)}</span>
                     </div>
                     <div className={classes['tweet-text']}>
-                        <span>{props.text}</span>
+                        <span>{props.item.text}</span>
                     </div>
-                    <div className={classes['like-info']}>
-                        <img src={like} className={classes['like-image']}/>
-                        <span>15</span>
-                    </div>
+                  <LikeImage/>
                 </div>
             </div>
         </li>

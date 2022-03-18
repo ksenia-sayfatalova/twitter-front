@@ -32,20 +32,6 @@
     margin-bottom: 15px;
 }
 
-.checkbox-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.checkbox-wrapper label {
-    margin-bottom: 0;
-    margin-left: 10px;
-}
-
 input::placeholder {
     text-align: start;
     vertical-align: top;
@@ -65,29 +51,3 @@ input:focus {
     width: 100%;
 }
 
-
-.checker {
-    width: 15px;
-    height: 15px;
-    border: 1px solid rgba(102, 117, 127, 1);
-    border-radius: 5px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.checker-mark-wrapper {
-    display: none;
-    max-width: 20px;
-}
-
-.trigger:checked + .checker .checker-mark-wrapper {
-    display: block;
-}
-
-.trigger {
-    position: absolute;
-    opacity: 0;
-    z-index: 1;
-}

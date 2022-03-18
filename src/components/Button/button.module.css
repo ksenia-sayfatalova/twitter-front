@@ -7,7 +7,6 @@
     padding: 7px 28px;
     border-radius: 100px;
     font-size: 14px;
-    /*width: 100%;*/
 }
 .btn-secondary {
     color: rgba(0, 132, 180, 1);
@@ -15,10 +14,4 @@
 }
 .w-100 {
     width: 100%;
-}
-
-.btn-third {
-    /*margin-top: 10px;*/
-    /*width: 95%;*/
-    /*padding: 10px 0;*/
 }

@@ -7,6 +7,6 @@ export const ProfilePage = (props) => {
     return <Fragment>
         <Header/>
         <Cover/>
-        <Profile items={props.items}/>
+        <Profile/>
     </Fragment>
 }
