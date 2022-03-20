@@ -1,6 +1,6 @@
 
 .btn-primary {
-    background-color: rgba(0, 132, 180, 1);
+    background-color: var(--primary-color);
     font-weight: bold;
     color: white;
     border:none;
@@ -9,7 +9,7 @@
     font-size: 14px;
 }
 .btn-secondary {
-    color: rgba(0, 132, 180, 1);
+    color: var(--primary-color);
     background-color: white;
 }
 .w-100 {

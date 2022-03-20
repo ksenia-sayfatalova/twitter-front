@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import {tweetListActions} from '../../../store/tweetList';
 
 export const TweetsList = () => {
-    const tweets = useSelector((state) => state.tweetList.tweets);
+    const tweets = useSelector((state) => state.tweetList);
     const tweetsList = tweets.map((item) => (
         <TweetItem
             key={item.id}

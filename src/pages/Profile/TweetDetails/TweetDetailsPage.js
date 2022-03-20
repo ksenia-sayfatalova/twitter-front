@@ -8,7 +8,7 @@ import {useSelector} from "react-redux";
 import {tweetListActions} from '../../../store/tweetList';
 
 export const TweetDetailsPage = (props) => {
-    const tweets = useSelector((state) => state.tweetList.tweets);
+    const tweets = useSelector((state) => state.tweetList);
     const params = useParams();
     const tweet = tweets.find((item) => item.id === params.detailsId);
 

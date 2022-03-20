@@ -6,7 +6,7 @@
 }
 
 .header p {
-    color:rgba(0, 132, 180, 1);
+    color: var(--primary-color);
     font-weight: bold;
     font-size: 14px;
 }

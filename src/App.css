@@ -18,3 +18,6 @@ body {
 
 }
 
+:root {
+  --primary-color: rgba(0, 132, 180, 1);
+}
