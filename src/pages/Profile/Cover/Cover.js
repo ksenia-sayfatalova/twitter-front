@@ -1,8 +1,10 @@
 import cover from '../../../assets/cover.jpg';
 import classes from './Cover.module.css';
 import {Fragment} from "react";
+import {useSelector} from "react-redux";
 
 export const Cover = () => {
+    const tweets = useSelector((state) => state.tweetList.list);
     return (<Fragment>
             <div className={classes['image-wrapper']}>
                 <img src={cover}/>
@@ -12,7 +14,7 @@ export const Cover = () => {
                     <div className={classes['small-tweet-wrapper']}>
                         <div className={classes['small-tweet']}>
                             <span className={classes['small-tweet-title']}> Tweets </span>
-                            <span className={classes['small-tweet-count']}>15</span>
+                            <span className={classes['small-tweet-count']}>{tweets.length}</span>
                         </div>
                     </div>
                 </div>

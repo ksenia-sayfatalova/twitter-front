@@ -8,10 +8,27 @@
     border-radius: 100px;
     font-size: 14px;
 }
+
+.btn-primary:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+}
+
 .btn-secondary {
     color: var(--primary-color);
     background-color: white;
+    margin-right: 10px;
 }
 .w-100 {
     width: 100%;
+}
+.btn:disabled,
+.btn:disabled:hover,
+.btn:disabled:active
+{
+    background-color: #ccc;
+    color:#292929;
+    border-color: #ccc;
+    cursor:not-allowed;
+    box-shadow: none;
 }

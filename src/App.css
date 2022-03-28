@@ -17,7 +17,9 @@ body {
   background-color: white;
 
 }
-
+a {
+  text-decoration: none;
+}
 :root {
-  --primary-color: rgba(0, 132, 180, 1);
+  --primary-color: rgb(29, 155, 240);
 }

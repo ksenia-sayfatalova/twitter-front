@@ -13,14 +13,14 @@ export const TweetItem = (props) => {
                 </div>
                 <div className={classes['tweet-item-info']}>
                     <div className={classes['tweet-info']}>
-                        <h3>{props.item.name}</h3>
-                        <span className={classes['tweet-info-user']}>{props.item.user}</span>
-                        <span>{dateFormat(props.item.date)}</span>
+                        <h3>{props.item.user.firstName} {props.item.user.lastName}</h3>
+                        <span className={classes['tweet-info-user']}>{props.item.user.login}</span>
+                        <span>{dateFormat(new Date(props.item.createdAt))}</span>
                     </div>
                     <div className={classes['tweet-text']}>
-                        <span>{props.item.text}</span>
+                        <span>{props.item.message}</span>
                     </div>
-                  <LikeImage/>
+                  <LikeImage likeAmount={props.item.likes}/>
                 </div>
             </div>
         </li>
