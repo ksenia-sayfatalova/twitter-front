@@ -10,6 +10,7 @@
     max-width: 605px;
     border-radius: 8px;
 }
+
 .details-wrapper {
     margin: 31px 32px 30px 49px;
 }
@@ -31,14 +32,14 @@
     font-weight: bold;
     margin-left: 15px;
     margin-bottom: 3px;
-    text-align:left;
+    text-align: left;
 }
 
 .details-user {
     font-size: 14px;
     color: rgba(101, 119, 134, 1);
     margin-left: 10px;
-    text-align:left;
+    text-align: left;
 }
 
 
@@ -52,7 +53,7 @@
 /*    width: 15px;*/
 /*}*/
 
-.details-text{
+.details-text {
     margin-bottom: 25px;
     margin-top: 30px;
     font-size: 27px;
@@ -60,11 +61,14 @@
 
 }
 
-.details-date{
+.details-date {
     font-size: 14px;
     color: rgba(101, 119, 134, 1);
     margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
 }
+
 .details-like {
     font-size: 14px;
     display: flex;
@@ -76,6 +80,7 @@
 .details-like-amount {
     font-weight: bold;
 }
+
 .details-like-text {
     margin-left: 5px;
     color: rgba(101, 119, 134, 1);
@@ -85,15 +90,82 @@
     height: 2px;
     background-color: rgba(230, 236, 240, 1);
     content: '';
-    width:100%;
-    height: 2px;
+    width: 100%;
     position: absolute;
     bottom: 0;
     margin: -11px 0;
 
 }
+
 .details-like::before {
     top: 0;
     bottom: unset;
 }
 
+.back-image-wrapper {
+    max-width: 20px;
+    margin-right: 10px;
+}
+
+.back-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3px;
+}
+
+.Modal {
+    background-color: white;
+    text-align: center;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    border: 1px solid #dcdbdb;
+    border-radius: 5px;
+}
+
+.modal-content {
+    border-color: #bebdbd;
+    width: 350px;
+    padding: 50px 0;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-image {
+    width: 30px;
+    height: 30px;
+}
+
+.button-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.delete-image:hover {
+    color: #ff2d2d;
+}
+.details-date-time {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.fillWhite {
+    fill: #fff;
+}
+.fillGray {
+    fill: #585858;
+}
+
+.deleteButtonWrapper:hover .fillGray {
+    fill:red;
+}

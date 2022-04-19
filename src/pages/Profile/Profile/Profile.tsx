@@ -6,9 +6,11 @@ import classNames from "classnames";
 import {Fragment} from "react";
 import {Button} from "../../../components/Button/Button";
 import {TweetForm} from "../TweetForm/TweetForm";
+import {useSelector} from "react-redux";
+import {IRootStore} from "../../../models/interfaces/store";
 
-export const Profile = (props) => {
-    const token = localStorage.getItem('token');
+export const Profile = () => {
+    const token = useSelector((state:IRootStore)=> state.user.token);
     return (
         <div className={classes['general-wrapper']}>
             <div className={classNames('section-wrapper', classes['section-wrapper-hue'])}>

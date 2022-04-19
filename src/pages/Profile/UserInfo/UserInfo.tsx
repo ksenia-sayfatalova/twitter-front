@@ -4,10 +4,11 @@ import location from '../../../assets/location.svg';
 import classes from './UserInfo.module.css'
 import {useSelector} from "react-redux";
 import {dateFormat} from "../../../utils/dateFormat";
+import {IRootStore} from "../../../models/interfaces/store";
 
 export const UserInfo = () => {
-    const user = useSelector(state => state.user.userInfo);
-   const createdAtMonth = new Date(user.createdAt).toLocaleString('en-US', {month:'long'});
+    const user = useSelector((state:IRootStore) => state.user.userInfo);
+    const createdAtMonth = new Date(user.createdAt).toLocaleString('en-US', {month:'long'});
     const createdAtYear = new Date(user.createdAt).getFullYear();
 
     return (<Fragment> <div className={classes['user-info']}>

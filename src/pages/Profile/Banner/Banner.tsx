@@ -4,9 +4,10 @@ import {Button} from "../../../components/Button/Button";
 import {NavLink} from "react-router-dom";
 import {useSelector} from "react-redux";
 import {Fragment} from "react";
+import {IRootStore} from "../../../models/interfaces/store";
 
 export const Banner = () => {
-    const id = useSelector((state) => state.user.userInfo.id);
+    const id = useSelector((state:IRootStore) => state.user.userInfo.id);
     return (<Fragment>
         {!id && <div className={classes.banner}>
         <img src={banner} className={classes['banner-image']}/>

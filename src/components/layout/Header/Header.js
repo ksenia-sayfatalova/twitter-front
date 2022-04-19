@@ -6,9 +6,8 @@ import {useDispatch, useSelector} from "react-redux";
 import {userActions} from "../../../store/user";
 
 
-const Header = (props) => {
+const Header = () => {
     const id = useSelector((state) => state.user.userInfo.id);
-    const token = localStorage.getItem('token');
     const navigate = useNavigate();
     const dispatch = useDispatch();
 

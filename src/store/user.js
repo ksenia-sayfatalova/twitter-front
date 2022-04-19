@@ -11,7 +11,8 @@ const initialUserState = {
         location: null,
         login: null,
         tweets: null,
-    }
+    },
+    token: null
 };
 
 
@@ -24,6 +25,10 @@ const userSlice = createSlice({
         },
         clearUserInfo(state, action) {
             state.userInfo = initialUserState.userInfo;
+            state.token = initialUserState.token;
+        },
+        setToken(state,action) {
+            state.token = action.payload;
         }
     }
 });

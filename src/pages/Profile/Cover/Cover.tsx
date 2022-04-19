@@ -2,9 +2,10 @@ import cover from '../../../assets/cover.jpg';
 import classes from './Cover.module.css';
 import {Fragment} from "react";
 import {useSelector} from "react-redux";
+import {IRootStore} from "../../../models/interfaces/store";
 
 export const Cover = () => {
-    const tweets = useSelector((state) => state.tweetList.list);
+    const tweets = useSelector((state:IRootStore) => state.tweetList.list);
     return (<Fragment>
             <div className={classes['image-wrapper']}>
                 <img src={cover}/>

@@ -32,3 +32,28 @@
     cursor:not-allowed;
     box-shadow: none;
 }
+
+.size-small {
+    padding: 5px 15px;
+}
+.size-small:hover{
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.delete {
+    /*background-color: white;*/
+    /*color: #3d3b3b;*/
+    /*font-weight: normal;*/
+    /*border-radius: 10px;*/
+    /*padding: 0px 78px;*/
+    /*box-shadow: none;*/
+    /*font-size: 12px;*/
+
+}
+.delete:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+}
+.modal {
+    margin-left: 10px;
+}
