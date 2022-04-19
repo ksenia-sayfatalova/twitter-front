@@ -1,0 +1,14 @@
+.general-tweet-details-wrapper, .no-tweet-wrapper {
+    background-color: rgba(115, 118, 120, 1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-tweet-wrapper {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+

@@ -1,8 +1,32 @@
 * {
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 .section-wrapper {
   max-width: 1270px;
   display: flex;
   width: 100%;
+}
+body {
+  overflow-x: hidden;
+}
+.tweet-menu-wrapper {
+  max-width: 620px;
+  width: 100%;
+  display: flex;
+  background-color: white;
+
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --primary-color: rgb(29, 155, 240);
+}
+.general-sign-up-wrapper {
+  background-color: rgba(115, 118, 120, 1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

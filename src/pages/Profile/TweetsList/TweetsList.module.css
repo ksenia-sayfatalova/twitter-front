@@ -1,0 +1,13 @@
+.tweets ul {
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+.tweets {
+    width: 100%;
+}
+
+.tweetItem {
+    color:black;
+}

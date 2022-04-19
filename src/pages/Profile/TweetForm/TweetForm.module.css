@@ -1,0 +1,31 @@
+.tweet-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+ .tweet-input {
+    border: none;
+    padding: 30px 20px;
+    font-style: normal;
+}
+.hashtag-input  {
+    border: none;
+    padding: 20px 20px;
+    font-style: normal;
+}
+
+.tweet-input::placeholder {
+    font-size: 20px;
+    line-height: 25px;
+}
+.hashtag-input::placeholder {
+    font-size: 15px;
+}
+.button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+}

@@ -1,0 +1,33 @@
+.user-info{
+    margin-top: 60px;
+    padding-left:40px ;
+    color: rgba(101, 119, 134, 1);
+}
+.date-image {
+    width: 14px;
+    height: 14px;
+}
+.location-image {
+    width: 14px;
+    height: 16px;
+}
+.user-name{
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: rgba(20, 23, 26, 1);
+}
+.user-data {
+    margin-top: 28px;
+}
+.user-date {
+    margin-bottom: 13px;
+}
+
+
+.location-info {
+    margin-left: 5px;
+}
+
+.date-info {
+    margin-left: 5px;
+}
